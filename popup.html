@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kick Points Collector</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+  <div class="container">
+    <h1>Kick Points Collector</h1>
+    
+    <div class="extension-toggle-container">
+      <span class="extension-toggle-label">Статус расширения:</span>
+      <label class="toggle-switch extension-toggle">
+        <input type="checkbox" id="extension-toggle">
+        <span class="toggle-slider"></span>
+      </label>
+      <span id="extension-status" class="extension-status">Включено</span>
+    </div>
+    
+    <div class="streamers-container">
+      <div class="streamers-header">
+        <span class="streamer-name-header">Стример</span>
+        <span class="streamer-status-header">Статус</span>
+        <span class="streamer-viewers-header">Зрители</span>
+        <span class="streamer-actions-header">Действия</span>
+      </div>
+      
+      <div id="streamers-list">
+        <!-- Стримеры будут добавлены здесь динамически -->
+      </div>
+      
+      <button id="add-streamer" class="btn add-btn">+ Добавить стример</button>
+      <button id="save-streamers" class="btn save-btn">Сохранить</button>
+    </div>
+    
+    <div class="log-container">
+      <h2>Лог активности</h2>
+      <div id="activity-log" class="activity-log">
+        <!-- Лог будет добавлен здесь динамически -->
+      </div>
+      <button id="clear-log" class="btn clear-btn">Очистить лог</button>
+    </div>
+    
+    <div class="footer">
+      <p>Kick Points Collector v1.0</p>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
