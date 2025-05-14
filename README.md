@@ -1,0 +1,1 @@
+# KICK-channel-score-collector
